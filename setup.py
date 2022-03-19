@@ -10,5 +10,6 @@ setup(
     author_email='vpp.filho@gmail.com',
     license='unlicense',
     zip_safe=False,
-    packages=find_packages()
+    package_dir={"vicentepinheiro": "vicentepinheiro"},
+    packages=find_packages(),
 )
