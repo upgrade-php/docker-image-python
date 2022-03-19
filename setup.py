@@ -10,5 +10,5 @@ setup(
     author_email='vpp.filho@gmail.com',
     license='unlicense',
     zip_safe=False,
-    package_dir={"faprod": "faprod"},
+    packages=find_packages()
 )
