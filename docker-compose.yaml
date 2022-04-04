@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  ambiente:
+    build:
+      context: .
+      dockerfile: ./image_python/Dockerfile
+      target: local
+      args:
+        INSTALL_DEV: 'true'
+    container_name: ambiente-um
+    volumes:
+      - .:/usr/src/app
+    stdin_open: true
+    tty: true
