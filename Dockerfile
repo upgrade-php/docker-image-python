@@ -23,6 +23,8 @@ ENV PYTHONUNBUFFERED True
 ENV APP_HOME /usr/src/app
 WORKDIR $APP_HOME
 COPY . ./
+RUN pip install -U pip setuptools poetry && \
+    poetry config virtualenvs.create
 RUN poetry install --no-dev
 
 
